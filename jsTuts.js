@@ -68,3 +68,29 @@ function todo(x,y,CallBack){
   return CallBack(x,y);
 }
 console.log(todo(2,3,doWhatever));
+
+
+// Closure (function inside another function) --------------------
+
+function outer(){
+  var outervari = "i am an outer variable";
+  console.log(outervari);
+  function inner(){
+    var innervari = "i am an inner variable";
+    console.log(innervari);
+    console.log(outervari);
+  }
+  inner();
+  console.log(outervari);
+  // console.log(innervari);  will produce error
+}
+outer();
+
+
+// Function Expression these are not hoisted unlike function declarations (#top me move nhi karta declarations ko )---
+
+var display = function show(){
+  console.log("Display the message here");
+};
+display();
+

@@ -94,3 +94,28 @@ var display = function show(){
 };
 display();
 
+
+//          -----------------------------  Arrow Functions  -----------------------------------------
+
+
+// the only difference between function expression and anonymous function as compared to arrow function is that the arrow function is anonymous and we need not to write function keyword instead we use arrow symbol and also they are shorter version of anonymous functions
+var myfun = () => {console.log("This is magic of arrow function")};
+myfun();
+
+// Arrow Functions with parameter
+// arrow function with one parameter then parenthesis is optional
+
+var myfun = a => {console.log("Single Param"+" "+a);};
+myfun(10);
+
+// arrow function with more than one parameter require parenthesis
+
+var myfun = (a,b) => {console.log("Multi Param"+" "+(a+b))};
+myfun(10,20);
+
+// arrow function with no return statement must not be written in curly braces and without return keyword
+
+var calSum = (a,b) => a+b;
+console.log(calSum(10,20));
+
+

@@ -119,3 +119,11 @@ var calSum = (a,b) => a+b;
 console.log(calSum(10,20));
 
 
+// ---------------------------  Immediately invoked function ---------------------------------
+
+// These are the anonymous function and call themselves (also known as self executing ) these are used to reduce the global functions and global variables they use grouping operator to execute "()" (grouping operator)
+// zero parameter function
+(function(){console.log("Hello World");})();
+// parameterized function
+(function(a,b){console.log("The sum is "+(a+b));})(10,20);
+

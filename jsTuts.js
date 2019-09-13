@@ -127,3 +127,19 @@ console.log(calSum(10,20));
 // parameterized function
 (function(a,b){console.log("The sum is "+(a+b));})(10,20);
 
+// -------------- TYPE OF OPERATOR ------------------
+// Type of operator is used to get datatype of an operator
+var a = 10;
+console.log(typeof(a));
+
+
+// -------------   UNDEFNED IN JAVASCRIPT -----------------
+
+// Undefined is used for variable or object properties that either donot exsist or have not been assigned an value ex-:
+var num;
+console.log(num);
+//  output -> undefined
+
+// -------------- NULL----------------
+
+// Null value indicates the empty value it is a place holder that represents nothing and its value is defined as empty object
